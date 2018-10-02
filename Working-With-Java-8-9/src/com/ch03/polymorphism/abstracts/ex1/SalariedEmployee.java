@@ -20,6 +20,7 @@ public class SalariedEmployee extends Employee {
         {
             throw new IllegalArgumentException("weekly salary must be >= 0.0");
         }
+        this.weeklySalary = weekleySalary;
     }
 
     public double getWeeklySalary() {
@@ -38,6 +39,6 @@ public class SalariedEmployee extends Employee {
     @Override
     public String toString()
     {
-        return String.format("salaried employee: %s%n%s: $%,.2f", super.toString(), " weekly salary", getWeeklySalary());
+        return String.format("salaried employee: %s%n%s: $%,.2f", super.toString(), "weekly salary", getWeeklySalary());
     }
 }
